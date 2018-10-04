@@ -4,6 +4,9 @@
 # Automatic keyword extraction from indi-vidual documents. 
 # In M. W. Berry and J. Kogan (Eds.), Text Mining: Applications and Theory.unknown: John Wiley and Sons, Ltd.
 
+from __future__ import division
+from __future__ import print_function
+
 import re
 import operator
 import math
@@ -128,7 +131,7 @@ def rake(text):
 
 	totalKeywords = len(sortedKeywords)
 	if debug: print(totalKeywords)
-	print(sortedKeywords[0:(totalKeywords/3)])
+	print(sortedKeywords[:int(totalKeywords/3)])
 	return  sortedKeywords
 
 if test:
