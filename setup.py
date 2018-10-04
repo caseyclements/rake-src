@@ -1,4 +1,4 @@
-#!/Users/zhaoy10/ENV/bin/python
+#!/usr/bin/env python
 
 import os
 from setuptools import setup,find_packages
@@ -16,7 +16,7 @@ setup(name= 'rake',
 	packages = find_packages(),
 	package_data = {'':['*.*'],'rake':['*.*']},
 	long_description=open(README).read() + "\n\n",
-	description = ('Rapid Automatic Keywords Extraction', "Just a Practice"),
+	description = 'Rapid Automatic Keywords Extraction. Just a Practice',
 	classifiers=[
 		"Programming Language :: Python",
 		("Topic :: Software Development :: Libraries :: Python Modules"),
