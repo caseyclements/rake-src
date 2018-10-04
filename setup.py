@@ -21,5 +21,4 @@ setup(name= 'rake',
 		"Programming Language :: Python",
 		("Topic :: Software Development :: Libraries :: Python Modules"),
 	],
-	install_requires=[x.replace("==",">=") for x in open(REQUIREMENT).read().split('\n') if x!=""],
     )
