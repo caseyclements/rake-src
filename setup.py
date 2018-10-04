@@ -15,7 +15,6 @@ setup(name= 'rake',
 	url="https://github.com/fishkao/rake",
 	packages = find_packages(),
 	package_data = {'':['*.*'],'rake':['*.*']},
-	namespace_packages=['rake'],
 	long_description=open(README).read() + "\n\n",
 	description = ('Rapid Automatic Keywords Extraction', "Just a Practice"),
 	classifiers=[
