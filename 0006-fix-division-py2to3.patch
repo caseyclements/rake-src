@@ -1,0 +1,35 @@
+From 9d4a37279277aecafbd33af00d8db6e5456c7c02 Mon Sep 17 00:00:00 2001
+From: Casey Clements <casey.clements@continuum.io>
+Date: Thu, 4 Oct 2018 16:58:56 -0400
+Subject: [PATCH 6/6] fix division py2to3
+
+---
+ rake/rake.py | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/rake/rake.py b/rake/rake.py
+index 81646dc..391b11d 100755
+--- a/rake/rake.py
++++ b/rake/rake.py
+@@ -4,6 +4,9 @@
+ # Automatic keyword extraction from indi-vidual documents. 
+ # In M. W. Berry and J. Kogan (Eds.), Text Mining: Applications and Theory.unknown: John Wiley and Sons, Ltd.
+ 
++from __future__ import division
++from __future__ import print_function
++
+ import re
+ import operator
+ import math
+@@ -128,7 +131,7 @@ def rake(text):
+ 
+ 	totalKeywords = len(sortedKeywords)
+ 	if debug: print(totalKeywords)
+-	print(sortedKeywords[0:(totalKeywords/3)])
++	print(sortedKeywords[:int(totalKeywords/3)])
+ 	return  sortedKeywords
+ 
+ if test:
+-- 
+2.14.3 (Apple Git-98)
+

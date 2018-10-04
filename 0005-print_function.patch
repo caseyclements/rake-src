@@ -1,0 +1,45 @@
+From 451f26c69fe992d148192980d139803eeeb1b983 Mon Sep 17 00:00:00 2001
+From: Casey Clements <casey.clements@continuum.io>
+Date: Thu, 4 Oct 2018 16:55:53 -0400
+Subject: [PATCH 5/6] print_function
+
+---
+ rake/rake.py | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/rake/rake.py b/rake/rake.py
+index 571f892..81646dc 100755
+--- a/rake/rake.py
++++ b/rake/rake.py
+@@ -14,7 +14,7 @@ test = True
+ 
+ def isnum (s):
+     try:
+-    	float(s) if '.' in s else int(s)
++        float(s) if '.' in s else int(s)
+         return True
+     except ValueError:
+         return False
+@@ -121,14 +121,14 @@ def rake(text):
+ 
+ 	# generate candidate keyword scores
+ 	keywordcandidates = generateCandidateKeywordScores(phraseList, wordscores)
+-	if debug: print keywordcandidates
++	if debug: print(keywordcandidates)
+ 
+-	sortedKeywords = sorted(keywordcandidates.iteritems(), key=operator.itemgetter(1), reverse=True)
+-	if debug: print sortedKeywords
++	sortedKeywords = sorted(keywordcandidates.items(), key=operator.itemgetter(1), reverse=True)
++	if debug: print(sortedKeywords)
+ 
+ 	totalKeywords = len(sortedKeywords)
+-	if debug: print totalKeywords
+-	print sortedKeywords[0:(totalKeywords/3)]
++	if debug: print(totalKeywords)
++	print(sortedKeywords[0:(totalKeywords/3)])
+ 	return  sortedKeywords
+ 
+ if test:
+-- 
+2.14.3 (Apple Git-98)
+

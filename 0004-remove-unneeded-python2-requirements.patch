@@ -1,0 +1,22 @@
+From fb0a70f3fff45694f798d750026f06acd5da552d Mon Sep 17 00:00:00 2001
+From: Casey Clements <casey.clements@continuum.io>
+Date: Thu, 4 Oct 2018 13:36:23 -0400
+Subject: [PATCH 4/6] remove unneeded python2 requirements
+
+---
+ setup.py | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 47e033d..01e0bcd 100644
+--- a/setup.py
++++ b/setup.py
+@@ -21,5 +21,4 @@ setup(name= 'rake',
+ 		"Programming Language :: Python",
+ 		("Topic :: Software Development :: Libraries :: Python Modules"),
+ 	],
+-	install_requires=[x.replace("==",">=") for x in open(REQUIREMENT).read().split('\n') if x!=""],
+     )
+-- 
+2.14.3 (Apple Git-98)
+

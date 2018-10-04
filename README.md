@@ -1,6 +1,5 @@
-RAKE
-====
+This repistory has been copied from https://pypi.org/project/rake/ for the purposes of writing a blog post only.
 
-A Python implementation of the Rapid Automatic Keyword Extraction (RAKE) algorithm as described in: Rose, S., Engel, D., Cramer, N., & Cowley, W. (2010). Automatic Keyword Extraction from Individual Documents. In M. W. Berry & J. Kogan (Eds.), Text Mining: Theory and Applications: John Wiley & Sons.
+The commits herein provide the patch files necessary to build a Python 3 Conda Recipe from directly from the 1.0 release on PyPI.
 
-The source code is released under the MIT License.
+To create the patches required, `git format-patch -6`. This will create a patch per commit. Some you may not want, such as the commit of the README! :)

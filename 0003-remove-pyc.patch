@@ -1,0 +1,24 @@
+From 09ae9525d0c41641188df0070671e93970b983e0 Mon Sep 17 00:00:00 2001
+From: Casey Clements <casey.clements@continuum.io>
+Date: Thu, 4 Oct 2018 13:34:38 -0400
+Subject: [PATCH 3/6] remove pyc
+
+---
+ rake/__init__.pyc | Bin 136 -> 0 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 rake/__init__.pyc
+
+diff --git a/rake/__init__.pyc b/rake/__init__.pyc
+deleted file mode 100644
+index 123d7b726334eba8f8a073aa837539145065cd1c..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 136
+zcmZSn%*%B*Xjf1&0~9a<X$K%KW&si@3=F{<AQ3+eAi;n}6dMA?^h1kNi;DHDG7|GE
+y4Gr{NQj4=o@(c8f60=j0i1_%-yv&mLc)fzk5)Pm)o80`A(wtN~klDpR%m4t7;vBaC
+
+-- 
+2.14.3 (Apple Git-98)
+

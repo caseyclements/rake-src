@@ -1,0 +1,31 @@
+From 54eefdf588977a94f55c1e9d0792c81d115fe075 Mon Sep 17 00:00:00 2001
+From: Casey Clements <casey.clements@continuum.io>
+Date: Thu, 4 Oct 2018 13:33:50 -0400
+Subject: [PATCH 2/6] change setup description from tuple to string
+
+---
+ setup.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/setup.py b/setup.py
+index 32656a8..47e033d 100644
+--- a/setup.py
++++ b/setup.py
+@@ -1,4 +1,4 @@
+-#!/Users/zhaoy10/ENV/bin/python
++#!/usr/bin/env python
+ 
+ import os
+ from setuptools import setup,find_packages
+@@ -16,7 +16,7 @@ setup(name= 'rake',
+ 	packages = find_packages(),
+ 	package_data = {'':['*.*'],'rake':['*.*']},
+ 	long_description=open(README).read() + "\n\n",
+-	description = ('Rapid Automatic Keywords Extraction', "Just a Practice"),
++	description = 'Rapid Automatic Keywords Extraction. Just a Practice',
+ 	classifiers=[
+ 		"Programming Language :: Python",
+ 		("Topic :: Software Development :: Libraries :: Python Modules"),
+-- 
+2.14.3 (Apple Git-98)
+
