@@ -14,7 +14,7 @@ test = True
 
 def isnum (s):
     try:
-    	float(s) if '.' in s else int(s)
+        float(s) if '.' in s else int(s)
         return True
     except ValueError:
         return False
@@ -121,14 +121,14 @@ def rake(text):
 
 	# generate candidate keyword scores
 	keywordcandidates = generateCandidateKeywordScores(phraseList, wordscores)
-	if debug: print keywordcandidates
+	if debug: print(keywordcandidates)
 
-	sortedKeywords = sorted(keywordcandidates.iteritems(), key=operator.itemgetter(1), reverse=True)
-	if debug: print sortedKeywords
+	sortedKeywords = sorted(keywordcandidates.items(), key=operator.itemgetter(1), reverse=True)
+	if debug: print(sortedKeywords)
 
 	totalKeywords = len(sortedKeywords)
-	if debug: print totalKeywords
-	print sortedKeywords[0:(totalKeywords/3)]
+	if debug: print(totalKeywords)
+	print(sortedKeywords[0:(totalKeywords/3)])
 	return  sortedKeywords
 
 if test:
